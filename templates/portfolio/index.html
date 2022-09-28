@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BINAH LOUIS</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+</head>
+
+<body oncontextmenu="return false;">
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <div class="user">
+            <img src="{% static 'img/PASSPORT.jpg'%}" alt="">
+            <h3 class="name">Binah Louis</h3>
+            <p class="post">Full Stack Developer</p>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+        {% for message in messages %}
+        <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+            <span style="font-size: 2rem; color:#442be6;">{{message}}</span>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+        <h3>HI THERE !</h3>
+        <h1>I'M <span>Binah Louis</span></h1>
+        <p style="text-align: justify;">A software engineer with a proven ability to adapt in both self-starting and
+            collaborative environments while
+            staying
+            focused on achieving high quality results under strict deadlines. I have been developing websites and
+            applications for
+            around 3 years. Most my experience lies in full stack development and Linux server administration. I have
+            worked with
+            HTML/CSS, JavaScript, React, Django, some scripting languages like python and a little bit of C#.
+            Eager to obtain a challenging position at a prestigious company like Google or Microsoft that will expand my
+            learning
+            and build upon my developer skills.
+
+        </p>
+        <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about</span> me </h1>
+
+        <div class="row">
+
+            <div class="info">
+                <h3> <span> name : </span> Binah Louis </h3>
+                <h3> <span> age : </span> 26 </h3>
+                <h3> <span> qualification : </span> BSc. computer science </h3>
+                <h3> <span> post : </span> full stack developer </h3>
+                <h3> <span> languages : </span> english & French </h3>
+                <a href="{% static 'img/BINAH LOUIS.pdf'%}" download="{% static 'img/BINAH LOUIS.pdf'%}"><button
+                        class="btn"> download CV <i class="fas fa-download"></i>
+                    </button></a>
+            </div>
+
+            <div class="counter">
+
+                <div class="box">
+                    <span>2+</span>
+                    <h3>years of experience</h3>
+                </div>
+
+                <div class="box">
+                    <span>15+</span>
+                    <h3>porject completed</h3>
+                </div>
+
+                <div class="box">
+                    <span>10+</span>
+                    <h3>happy clients</h3>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- education section starts  -->
+
+    <section class="education" id="education">
+
+        <h1 class="heading"> my <span>education</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2016 - 2020</span>
+                <h3>bSc. Computer Science</h3>
+                <p>University of Ghana</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2016</span>
+                <h3>full stack course</h3>
+                <p>zuri training</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2015</span>
+                <h3>Web development course</h3>
+                <p>OGTECH Network</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2012 -2015</span>
+                <h3>WASSCE</h3>
+                <p>Keta Senior High School</p>
+            </div>
+        </div>
+
+    </section>
+    <h1 class="heading"> <span> my </span> skills </h1>
+
+    <div class="row-2">
+
+        <div class="skills">
+            <div class="progress">
+                <h3> web design <span> 95% </span> </h3>
+                <div class="bar"> <span></span> </div>
+            </div>
+            <div class="progress">
+                <h3> web development <span> 80% </span> </h3>
+                <div class="bar"> <span></span> </div>
+            </div>
+            <div class="progress">
+                <h3> django <span> 75% </span> </h3>
+                <div class="bar"> <span></span> </div>
+            </div>
+            <div class="progress">
+                <h3> react <span> 85% </span> </h3>
+                <div class="bar"> <span></span> </div>
+            </div>
+
+        </div>
+        <div class="skills">
+            <div class="progress">
+                <h3> html <span> 95% </span> </h3>
+                <div class="bar"> <span></span> </div>
+            </div>
+            <div class="progress">
+                <h3> CSS<span> 80% </span> </h3>
+                <div class="bar"> <span></span> </div>
+            </div>
+            <div class="progress">
+                <h3> javaScript <span> 75% </span> </h3>
+                <div class="bar"> <span></span> </div>
+            </div>
+            <div class="progress">
+                <h3> python <span> 85% </span> </h3>
+                <div class="bar"> <span></span> </div>
+            </div>
+
+
+        </div>
+
+        <div class="box-container">
+        </div>
+
+    </div>
+
+    <section class="experience" id="experience">
+
+        <h1 class="heading"> <span> my </span> experience </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="content">
+                    <span> Aug 2022 – Sep 2022 </span>
+                    <h3>Junior backend developer</h3>
+                    <p>Developed a web app to chunk json or csv <br>
+                        Maintenance of the web app and the database <br>
+                        Created accessible, responsive, and functional user interfaces to allow visitors on any device
+                        to have the same
+                        perfect user experience.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <span> Jan 2022 – July 2022 </span>
+                    <h3>Software developer</h3>
+                    <p> Produce clean, efficient code base on specifications <br>
+                        Implement security and protection solutions <br>
+                        Liaise with cross functional team to assist with code reviews and identify differences to
+                        integrate solutions on multiple platforms <br>
+                        <br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <span> Sep 2020 – Sept 2021</span>
+                    <h3>web developer</h3>
+                    <p style="text-align: left;">Participated in 3 continuing education training courses to learn
+                        modern practices and to learn
+                        new coding languages <br>
+                        Managed the development and maintenance of 17 client-side and server-side applications <br>
+                        <br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <span> Aug 2019 – Dec 2019 </span>
+                    <h3>Web development intern</h3>
+                    <p>Developed user interfaces with modern JavaScript frameworks, HTML5, and CSS3, which improved user
+                        satisfaction by 31%. <br>
+                        Developed object-oriented code in python Django with 100% accordance to industry and company
+                        standards <br>.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <span> Sep 2018 – Dec 2018</span>
+                    <h3>Web designer intern</h3>
+                    <p>Created accessible, responsive, and functional user interfaces to allow visitors on any device
+                        to have the same perfect user experience. <br>
+                        Built mock designs and wireframes for landing pages for 5 new product concepts. <br>
+                        <br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="box">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- experience section ends -->
+
+
+    <!-- education section ends -->
+
+    <!-- portfolio section starts  -->
+
+    <section class="portfolio" id="portfolio">
+
+        <h1 class="heading"> my <span>portfolio</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <a href="https://www.techstuffgh.com/" target="_blank">
+                    <img src="{% static 'img/eCommerce-Website-Development.png'%}" alt=""></a>
+
+            </div>
+
+            <div class="box">
+                <a href="https://chunkt.pythonanywhere.com/" target="_blank">
+                    <img src="{% static 'img/port-img3.jpg'%}" alt=""></a>
+            </div>
+
+            <div class="box">
+                <a href="https://patrickblog.pythonanywhere.com/" target="_blank">
+                    <img src="{% static 'img/preview.png'%}" alt=""></a>
+            </div>
+
+            <div class="box">
+                <a href="https://codex.pythonanywhere.com/" target="_blank">
+                    <img src="{% static 'img/web-design-business.jpg'%}" alt=""></a>
+            </div>
+
+            <div class="box">
+                <a href="https://anidosoherbal.shop/" target="_blank">
+                    <img src="{% static 'img/47300.png'%}" alt=""></a>
+            </div>
+
+            <div class="box">
+                <a href="https://dodziraynard.me/" target="_blank">
+                    <img src="{% static 'img/port-img6.jpg'%}" alt=""></a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- portfolio section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>contact</span> me </h1>
+
+        <div class="row">
+
+            <div class="content">
+
+                <h3 class="title">contact info</h3>
+
+                <div class="info">
+                    <h3> <i class="fas fa-envelope"></i> LBINAH@ST.UG.EDU.GH </h3>
+                    <h3> <i class="fas fa-phone"></i> +233-246-031-105 </h3>
+                    <h3> <i class="fas fa-phone"></i> +233-206-826-363 </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> Acrra, Ghana </h3>
+                </div>
+            </div>
+
+            <form action="/send" method="post">
+                {% csrf_token %}
+
+                <input type="text" name="name" placeholder="name" class="box">
+                <input type="email" name="email" placeholder="email" class="box">
+                <input type="text" name="project" placeholder="project" class="box">
+                <textarea name="message" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+
+    <!-- scroll top button  -->
+
+    <a href="#home" class="top">
+        <h1 class="fas fa-arrow-circle-up" style="font-size: 40px; color:#442be6;"></h1>
+    </a>
+
+
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="{% static 'js/script.js'%}"></script>
+
+
+</body>
+
+</html>
